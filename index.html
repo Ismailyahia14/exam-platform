@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملتقى الطالب الجامعي - كلية الإعلام</title>
+    <meta name="description" content="منصة اختبارات إلكترونية لكلية الإعلام - جامعة صنعاء">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="جامعة صنعاء" width="40" height="40">
+                <h1>ملتقى الطالب الجامعي</h1>
+            </div>
+            <div class="nav-controls">
+                <button id="darkModeToggle" class="icon-btn" aria-label="الوضع الليلي">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- مسار التنقل -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a> / <span>أرشيف الاختبارات</span>
+    </nav>
+
+    <main class="container">
+        <!-- رأس الصفحة مع إحصائيات -->
+        <header class="page-header">
+            <h1>أرشيف الاختبارات الإلكترونية</h1>
+            <p>اختر المادة التي ترغب في أداء اختبارها</p>
+        </header>
+
+        <!-- شريط الإحصائيات -->
+        <div class="stats-bar" aria-label="إحصائيات المنصة">
+            <div class="stat-item"><i class="fas fa-file-alt"></i> <span>4 اختبارات</span></div>
+            <div class="stat-item"><i class="fas fa-question-circle"></i> <span>158 سؤالاً</span></div>
+            <div class="stat-item"><i class="fas fa-clock"></i> <span>240 دقيقة</span></div>
+            <div class="stat-item"><i class="fas fa-users"></i> <span>500+ طالب</span></div>
+        </div>
+
+        <!-- البحث والتصفية -->
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="ابحث عن اختبار..." class="search-input" aria-label="بحث">
+            <select id="filterSelect" class="filter-select" aria-label="تصفية حسب المستوى">
+                <option value="all">جميع المستويات</option>
+                <option value="1">المستوى الأول</option>
+                <option value="2">المستوى الثاني</option>
+            </select>
+        </div>
+
+        <!-- شبكة الاختبارات -->
+        <div class="archive-grid" id="examGrid">
+            <!-- سيتم تعبئتها ديناميكياً من main.js -->
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <p>اللجنة العلمية لكلية الإعلام 2026©</p>
+        <div class="social-links">
+            <a href="#" aria-label="تيليجرام"><i class="fab fa-telegram"></i></a>
+            <a href="#" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
